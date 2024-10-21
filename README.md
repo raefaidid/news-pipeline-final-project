@@ -1,1 +1,5 @@
-# news-pipeline-final-project
+# News Pipeline Project
+
+The main goal of this pipeline was to web scrape articles from a news website and annotate those that mentioned financial aid or scholarship announcement, hence the name "Robinhood Project." The final data product would be a Telegram bot notifying users whenever these announcements are posted. Unfortunately, due to time constraints, I had to pivot from the main objective. However, I still managed to create a fully functional ETL pipeline.
+
+Another key goal was to showcase everything I’ve learned throughout the Data Engineering bootcamp, and I’m happy to say I’ve accomplished that. The architecture I designed includes using Pandas and PySpark within Databricks for data acquisition and transformation, orchestration via Workflows, and using HuggingFace as backup storage and Azure Data Lake Storage as the data lake. I also warehoused the data in Snowflake and created a simple Streamlit app within Snowflake. Additionally, I integrated a connection with an LLM API endpoint to classify article topics and sentiment. One highlight of the project was learning how to configure all these tools so they work seamlessly together.
